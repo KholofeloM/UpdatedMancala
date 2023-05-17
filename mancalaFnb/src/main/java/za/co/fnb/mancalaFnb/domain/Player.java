@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package za.co.fnb.mancalaFnb.domain;
+
+import lombok.Builder;
+import lombok.Data;
+
+/**
+ *
+ * @author S2026015
+ */
+@Data
+@Builder
+public class Player {
+
+    public int[] pits;
+    public int treasury;
+	public int[] getPits() {
+		return pits;
+	}
+	public void setPits(int[] pits) {
+		this.pits = pits;
+	}
+	public int getTreasury() {
+		return treasury;
+	}
+	public void setTreasury(int treasury) {
+		this.treasury = treasury;
+	}
+//	public static Object builder() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+    
+    
+}

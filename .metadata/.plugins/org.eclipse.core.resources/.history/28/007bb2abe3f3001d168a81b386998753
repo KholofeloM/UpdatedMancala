@@ -1,0 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package za.co.fnb.mancalaFnb.domain;
+
+import lombok.Builder;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ *
+ * @author S2026015
+ */
+@Data
+@Builder
+@Getter
+@Setter
+public class Game {
+    public String gameId;
+    public String currentPlayer;
+    public boolean isWinnerExist;
+    public String winner;
+    public Player player1;
+    public Player player2;
+    
+}
